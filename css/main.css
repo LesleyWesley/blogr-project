@@ -134,6 +134,10 @@ h1 {
   text-align: center;
 }
 
+.desktop-image {
+  display: none;
+}
+
 /*======= HEADER SECTION - MOBILE =======*/
 
 header {
@@ -214,6 +218,46 @@ header button {
   color: #FFF;
   border: 1px solid #FFF;
 }
+
+/*======== ABOUT SECTION  - MOBILE =========== */
+
+#about .full-width {
+  padding: 50px 0 25px 0;
+}
+
+#about h2 {
+  font-size: 1.4em;
+  color: #1E3A50;
+}
+
+#about figure {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 25px 0;
+}
+
+#about img {
+  width: 115%;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #1E3A50;
+  text-align: center;
+  width: 65%;
+  margin-bottom: 0;
+}
+
+#about p {
+  color: #4B5862;
+  width: 90%;
+  text-align: center;
+  font-size: .9em;
+}
+
+
+
 
 
 /* ==========================================================================
