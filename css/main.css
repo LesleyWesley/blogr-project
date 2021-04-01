@@ -298,6 +298,7 @@ h3 {
   border-top-right-radius: 80px;
   color: #C8C8CB;
   margin-top: 75px;
+  width: 100%;
 }
 
 #bottom-nav .full-width {
@@ -333,6 +334,16 @@ h3 {
 
 #bottom-nav li {
   padding: 4px 0;
+}
+
+.attribution {
+  background-color: #25252D;
+  color: #C8C8CB;
+  width: 100%;
+}
+
+.attribution a {
+  color: white;
 }
 
 
