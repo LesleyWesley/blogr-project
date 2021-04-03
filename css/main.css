@@ -261,16 +261,39 @@ h3 {
 
 #middle {
   padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
-.middle-background {
+.background {
   display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
   background: linear-gradient(150deg, #2C2D3F, #3F4164);
-  margin: 0;
+  margin-top: 75px;
+  width: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.background-top {
+  background: url("../img/bg-pattern-circles.svg");
+  background-position: bottom;
+  background-size: 500px;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  border-top-right-radius: 80px;
+}
+
+.background-bottom {
+  height: 250px;
+  width: 100%;
 }
 
 
