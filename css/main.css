@@ -154,7 +154,7 @@ header .full-width {
   background-image: url(../img/bg-pattern-intro.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 400px;
 }
 
 .upper-header {
@@ -275,10 +275,12 @@ h3 {
   flex-flow: row wrap;
   text-align: center;
   background: linear-gradient(150deg, #2C2D3F, #3F4164);
-  margin-top: 75px;
+  margin-top: 160px;
   width: 100%;
   border-top-right-radius: 80px;
   border-bottom-left-radius: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 .background-top {
@@ -292,8 +294,31 @@ h3 {
 }
 
 .background-bottom {
-  height: 250px;
+  height: 225px;
   width: 100%;
+}
+
+.foreground {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  position: absolute;
+  z-index: 2;
+}
+
+
+#middle h2 {
+  font-size: 2em;
+  color: #FFF;
+  text-align: center;
+  margin: 10px;
+}
+
+#middle p {
+  color: #FFF;
+  width: 85%;
+  margin: 0;
 }
 
 
