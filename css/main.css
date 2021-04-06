@@ -224,7 +224,7 @@ header button {
 /*===== RESPONSIVE HAMBURGER MENU STYLING =======*/
 
 .menu-wrap {
-  position: fixed;
+  position: absolute;
   top:20px;
   right: 10px;
   z-index: 1;
@@ -297,22 +297,38 @@ header button {
   transform: rotate(90deg);
 }
 
+/*Show menu */
+
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > nav {
+  transform: scale(1);
+
+}
+
+.menu-wrap .toggler:checked ~ .menu > nav > div {
+  opacity: 1;
+  transition: opacity 0.4 ease;
+}
+
 /* Actual Menu Styling */
 
 .menu-wrap .menu {
-  position: fixed;
+  position: relative;
   top: 125px;
   right: 0;
   width: 100%;
   height: 500px;
-  /*visibility: hidden;*/
+  visibility: hidden;
   Overflow: hidden;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
-.menu-wrap .menu > div {
+.menu-wrap .menu > nav {
   background: #FFF;
   width: 90%;
   height: auto;
@@ -320,28 +336,28 @@ header button {
   align-items: flex-start;
   justify-content: center;
   flex-flow: row wrap;
-  /*transform: scale(0);*/
+  transform: scale(0);
   transition: all 0.4s ease;
   border-radius: 2%;
   box-shadow: 5px 5px 20px rgba(37, 37, 45, 0.1)
 }
 
-.menu-wrap .menu > div > div {
+.menu-wrap .menu > nav > div {
   text-align: center;
   width: 90%;
   max-width: 90vw;
   max-height: 100vw;
-  /*opacity: 0;*/
+  opacity: 0;
   transition: opacity 0.4s ease;
 }
 
 
-.menu-wrap .menu > div > div > ul {
+.menu-wrap .menu > nav > div > ul {
   padding: 0;
   width: 100%;
 }
 
-.menu-wrap .menu > div > div > ul > li {
+.menu-wrap .menu > nav > div > ul > li {
   list-style: none;
   color: #1E3A50;
   font-family: "Overpass", sans-serif;
@@ -349,7 +365,7 @@ header button {
   padding: 1rem;
 }
 
-.menu-wrap .menu > div > div > ul > li > a {
+.menu-wrap .menu > nav > div > ul > li > a {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
@@ -369,6 +385,7 @@ header button {
   align-items: center;
   flex-flow: row wrap;
   width: 50%;
+  padding-bottom: 15px;
 }
 
 .menu-wrap .menu .login-section ul li {
