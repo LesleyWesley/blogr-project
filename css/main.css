@@ -226,8 +226,9 @@ header button {
 .menu-wrap {
   position: absolute;
   top:20px;
-  right: 10px;
+  right: 0px;
   z-index: 1;
+  width: 100%;
 }
 
 .menu-wrap .toggler {
@@ -320,7 +321,7 @@ header button {
   top: 125px;
   right: 0;
   width: 100%;
-  height: 500px;
+  height: 1000px;
   visibility: hidden;
   Overflow: hidden;
   display: flex;
@@ -331,38 +332,52 @@ header button {
 .menu-wrap .menu > nav {
   background: #FFF;
   width: 90%;
-  height: auto;
+  height: fit-content;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-flow: row wrap;
   transform: scale(0);
-  transition: all 0.4s ease;
   border-radius: 2%;
-  box-shadow: 5px 5px 20px rgba(37, 37, 45, 0.1)
+  transition: all 0.4s ease;
+
 }
 
 .menu-wrap .menu > nav > div {
   text-align: center;
-  width: 90%;
+  width: 100%;
   max-width: 90vw;
   max-height: 100vw;
   opacity: 0;
   transition: opacity 0.4s ease;
+
 }
 
 
 .menu-wrap .menu > nav > div > ul {
   padding: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #FFF;
+  border-radius: 2%;
+  box-shadow: 5px 20px 20px rgba(37, 37, 45, 0.2);
+  margin: 0;
 }
 
 .menu-wrap .menu > nav > div > ul > li {
   list-style: none;
   color: #1E3A50;
   font-family: "Overpass", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   padding: 1rem;
+  width: 90%;
+}
+
+.menu-wrap .menu > nav > div > ul > li > img {
+  width: 5%;
 }
 
 .menu-wrap .menu > nav > div > ul > li > a {
@@ -371,38 +386,60 @@ header button {
   transition: color 0.4s ease;
 }
 
-.menu-wrap .menu .login-section {
-  border-top: 1px solid #efeff1;
-  display: flex;
+/*Dropdown Menu Styling */
+
+.dropdown {
+  display: none;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #efeff1;
+  margin-top: 20px;
+  border-radius: 2%;
+  padding: 20px 0;
 }
 
-.menu-wrap .menu .login-section ul {
+.dropdown a {
+  width: 100%;
+  text-decoration: none;
+  color: #526573;
+  line-height: 40px;
+  font-size: .9em;
+}
+
+/* Dropdown Menu Animation */
+
+.menu-wrap .menu >nav > div > ul > li:hover {
+  color: #526573;
+}
+
+.menu-wrap .menu > nav > div > ul > li:hover .dropdown {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 50%;
-  padding-bottom: 15px;
 }
 
-.menu-wrap .menu .login-section ul li {
-  padding: 1.5rem;
+.menu-wrap .menu > nav > div > ul > li:hover img {
+  transform: rotate(180deg);
+  transition-duration: .4s;
 }
 
 
-.menu-wrap .menu .login-section .signup {
-    background: linear-gradient(150deg, #FF8F70, #FF3D54);
-    border-radius: 25px;
-    color: #FFF;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1em;
-    width: 90%;
-    padding: 10px 15px;
+/*Login Section */
+
+#login {
+   border-top: 1px solid #efeff1;
+   padding-top: 25px;
 }
 
+#signup {
+  background: linear-gradient(150deg, #FF8F70, #FF3D54);
+  border-radius: 25px;
+  color: #FFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+  width: 35%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
 
 /*======== ABOUT SECTION  - MOBILE =========== */
 
