@@ -209,10 +209,18 @@ header button {
   font-weight: bold;
 }
 
-.start-button {
+
+
+#start-button a{
+  text-decoration: none;
+  color: inherit;
   background-color: #FFF;
   color: #FF3D54;
+}
+
+#start-button button {
   border: none;
+  color: #FF3D54;
 }
 
 .learn-more {
@@ -440,6 +448,21 @@ header button {
   padding: 10px 15px;
   margin-bottom: 20px;
 }
+
+/* Active States for Buttons (not nav) */
+
+#signup:hover {
+  cursor: pointer;
+  background: #FE7C84;
+}
+
+#start-button a:hover {
+  color: #FFF;
+}
+
+
+
+
 
 /*======== ABOUT SECTION  - MOBILE =========== */
 
