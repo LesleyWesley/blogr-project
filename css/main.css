@@ -168,7 +168,7 @@ header .full-width {
 }
 
 header figure {
-  width: 25%;
+  width: 85%;
 }
 
 header i {
@@ -210,23 +210,19 @@ header button {
 }
 
 
-
-#start-button a{
-  text-decoration: none;
-  color: inherit;
-  background-color: #FFF;
+.start-button {
   color: #FF3D54;
-}
-
-#start-button button {
   border: none;
-  color: #FF3D54;
 }
 
-.learn-more {
+#learn-more button {
   background-color: transparent;
   color: #FFF;
   border: 1px solid #FFF;
+}
+
+.desktop-menu {
+  display: none;
 }
 
 /*===== RESPONSIVE HAMBURGER MENU STYLING =======*/
@@ -455,13 +451,6 @@ header button {
   cursor: pointer;
   background: #FE7C84;
 }
-
-#start-button a:hover {
-  color: #FFF;
-}
-
-
-
 
 
 /*======== ABOUT SECTION  - MOBILE =========== */
@@ -731,8 +720,68 @@ h3 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
+
+
+    .full-width {
+      width: 75%;
+    }
+/*====== HEADER STYLING - TABLET =========*/
+
+    .menu-wrap {
+      display: none;
+    }
+
+    .right-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: nowrap;
+      width: 55%;
+    }
+
+    header figure {
+      width: 20%;
+    }
+
+    .desktop-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: nowrap;
+      width: 70%;
+    }
+
+
+    .desktop-nav nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .desktop-menu ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: nowrap;
+      width: 100%;
+      padding: 0;
+      list-style: none;
+    }
+
+    .desktop-menu li a {
+      text-decoration: none;
+      color: #FFF;
+      font-size: .85em;
+    }
+
+    .desktop-menu li img {
+      width: 10%;
+    }
+
 }
 
 @media print,
