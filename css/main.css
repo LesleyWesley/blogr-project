@@ -215,7 +215,7 @@ header button {
   border: none;
 }
 
-#learn-more button {
+.learn-more{
   background-color: transparent;
   color: #FFF;
   border: 1px solid #FFF;
@@ -724,16 +724,27 @@ h3 {
   /* Style adjustments for viewports that meet the condition */
 
 
-    .full-width {
-      width: 90%;
-    }
 /*====== HEADER STYLING - TABLET =========*/
+
+    header {
+      background: linear-gradient(100deg, #FF8F70, #FF3D54);
+    }
+
+    .image-overlay {
+      background-size: 1600px;
+      background-position-y: -650px;
+      background-position-x: -150px;
+    }
 
     .menu-wrap {
       display: none;
     }
 
-    .right-header {
+    header .full-width {
+      padding: 50px 0 0 0;
+    }
+
+    .left-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -741,7 +752,7 @@ h3 {
       width: 45%;
       position: absolute;
       z-index: 1;
-      top: 35px;
+      top: 40px;
     }
 
     header figure {
@@ -798,7 +809,7 @@ h3 {
       padding: 10px 10px;
       background: #FFF;
       position: absolute;
-      
+
     }
 
     .dropdown .sub {
@@ -827,7 +838,65 @@ h3 {
 
     .dropdown .sub:hover {
       font-weight: 700;
+    }
 
+    .right-header {
+      width: 90%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: absolute;
+    }
+
+    .right-header .login-desktop {
+      text-decoration: none;
+      color: #FFF;
+      font-size: .85em;
+      margin-right: 20px;
+    }
+
+    .right-header .signup-desktop {
+      text-decoration: none;
+      background: #FFF;
+      color: #FF3D54;
+      font-size: .85em;
+      padding: 5px 20px;
+      border-radius: 25px;
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .right-header .signup-desktop:hover {
+      color: #FFF;
+      background: #FE7C84;
+
+    }
+
+    h1 {
+      font-size: 2.125em;
+      margin-bottom: 0;
+    }
+
+    h1 br {
+      display: none;
+    }
+
+    header p {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .buttons-section {
+      width: 42%;
+    }
+
+    .start-button:hover {
+      color: #FFF;
+      background-color: #FE7C84;
+    }
+
+    .learn-more:hover {
+      background-color: #FFF;
+      color: #FE7C84;
     }
 
 
