@@ -725,7 +725,7 @@ h3 {
 
 
     .full-width {
-      width: 75%;
+      width: 90%;
     }
 /*====== HEADER STYLING - TABLET =========*/
 
@@ -736,9 +736,12 @@ h3 {
     .right-header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       flex-flow: nowrap;
-      width: 55%;
+      width: 45%;
+      position: absolute;
+      z-index: 1;
+      top: 35px;
     }
 
     header figure {
@@ -750,7 +753,8 @@ h3 {
       justify-content: center;
       align-items: center;
       flex-flow: nowrap;
-      width: 70%;
+      width: 68%;
+
     }
 
 
@@ -759,28 +763,75 @@ h3 {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      position: relative;
     }
 
     .desktop-menu ul{
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       flex-flow: nowrap;
       width: 100%;
       padding: 0;
       list-style: none;
+      margin-top: 0;
     }
+
 
     .desktop-menu li a {
       text-decoration: none;
       color: #FFF;
       font-size: .85em;
+      width: 30%;
+      padding-bottom: 25px;
+
     }
 
     .desktop-menu li img {
       width: 10%;
     }
+
+    .dropdown {
+      text-align: left;
+      margin-top: 10px 2px;
+      width: 60px;
+      padding: 10px 10px;
+      background: #FFF;
+      position: absolute;
+      
+    }
+
+    .dropdown .sub {
+      font-size: .6em;
+      color: #203342;
+      line-height: 2.5em;
+      width: 100%;
+      padding-bottom: 0;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: lighter;
+    }
+
+    .desktop-menu li:hover .dropdown {
+      display: flex;
+    }
+
+    .desktop-menu li:hover {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .desktop-menu li:hover img {
+      transform: rotate(180deg);
+      transition-duration: .4s;
+    }
+
+    .dropdown .sub:hover {
+      font-weight: 700;
+
+    }
+
+
+
 
 }
 
