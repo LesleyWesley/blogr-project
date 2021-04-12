@@ -1033,6 +1033,32 @@ h3 {
   margin-top: 50px;
 }
 
+#bottom-nav .full-width {
+  width: 80%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+
+#bottom-nav figure {
+  margin: 20px 0;
+}
+
+
+#bottom-nav ul {
+  margin: 0;
+  text-align: left;
+}
+
+#bottom-nav li {
+  padding-bottom: 10px;
+}
+
+#bottom-nav li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 
 }
