@@ -498,7 +498,7 @@ h3 {
 /*====== MIDDLE SECTION - MOBILE =====*/
 
 #middle {
-  padding: 25px 0;
+  padding-bottom: 25px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -543,6 +543,13 @@ h3 {
   flex-flow: row wrap;
   position: absolute;
   z-index: 2;
+}
+
+.text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 
@@ -915,6 +922,7 @@ h3 {
 
   #about .full-width {
     justify-content: space-between;
+    padding: 50px 0 0 0;
   }
 
   #about h2 {
@@ -945,6 +953,47 @@ h3 {
   .mobile-image {
     display: none;
   }
+
+/*==== INFRASTRUCTURE SECTION - TABLET =====*/
+
+.background {
+  margin-top: 50px;
+}
+
+.background-top {
+  background-size: 575px;
+  background-repeat: no-repeat;
+  background-position-x: -120px;
+  background-position-y: -200px;
+  height: 375px;
+  border-bottom-left-radius: 80px;
+}
+
+.background-bottom {
+  height: 0;
+}
+
+.foreground {
+  justify-content: space-between;
+}
+
+#middle figure {
+  width: 50%;
+}
+
+.text-section {
+  width: 45%;
+}
+
+#middle h2 {
+  font-size: 1.85em;
+  margin-top: 100px;
+}
+
+#middle p {
+  text-align: left;
+  font-size: 1em;
+}
 
 
 
