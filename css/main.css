@@ -426,6 +426,10 @@ header button {
   transition-duration: .4s;
 }
 
+.right-header {
+  display: none;
+}
+
 
 /*Login Section */
 
@@ -899,8 +903,42 @@ h3 {
       color: #FE7C84;
     }
 
+  /*===== ABOUT SECTION - TABLET =======*/
 
+  #about .full-width {
+    justify-content: space-between;
+  }
 
+  #about h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+  }
+
+  #about h3 {
+    width: 100%;
+    font-size: 1.4em;
+    text-align: left;
+  }
+
+  #about p {
+    text-align: left;
+    font-size: 1em;
+    width: 100%;
+    line-height: 2em;
+  }
+
+  #about .half-width {
+    width: 60%;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .desktop-image {
+    display: flex;
+  }
 
 }
 
