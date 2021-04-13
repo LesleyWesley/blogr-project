@@ -1231,6 +1231,29 @@ h3 {
     font-size: 1em;
   }
 
+/*===== INFRASTRUCTURE SECTION - LARGE DESKTOP ====== */
+
+  .background {
+    margin-top: 75px;
+  }
+
+  .background-top {
+    height: 475px;
+    background-size: 1075px;
+    background-position-x: -225px;
+    background-position-y: -500px;
+  }
+
+  #middle h2 {
+    font-size: 2em;
+    margin-top: 200px;
+  }
+
+  #middle p {
+    font-size: 1em;
+    line-height: 2em;
+  }
+
 }
 
 
