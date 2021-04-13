@@ -466,6 +466,8 @@ header button {
 #about h2 {
   font-size: 1.4em;
   color: #1E3A50;
+  width: 100%;
+  text-align: center;
 }
 
 #about figure {
@@ -523,6 +525,7 @@ h3 {
 
 .background-top {
   background: url("../img/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
   background-position: bottom;
   background-size: 500px;
   height: 300px;
@@ -730,6 +733,42 @@ h3 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (min-width: 400px) {
+
+  .buttons-section {
+    width: 80%;
+  }
+
+  #bottom-nav .quarter-width {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .background-top {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  .buttons-section {
+    width: 55%;
+  }
+
+  #bottom-nav .full-width {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #bottom-nav .quarter-width {
+    width: 20%;
+  }
+}
+
+
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
@@ -1065,6 +1104,17 @@ h3 {
 
 }
 
+@media only screen and (min-width: 850px) {
+
+  #about {
+    background-position-x: 550px;
+  }
+
+  #features {
+    margin-top: 50px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
 
   /*===== HEADER STYLINGS - SMALL DESKTOP ======= */
@@ -1197,6 +1247,13 @@ h3 {
 
 }
 
+@media only screen and (min-width: 1150px) {
+
+  #about {
+    background-position-x: 675px;
+  }
+}
+
 
 @media only screen and (min-width: 1440px) {
 
@@ -1266,6 +1323,13 @@ h3 {
 
 #features p {
   font-size: 1em;
+}
+
+/*===== FOOTER - LARGE DESKTOP ======== */
+
+#bottom-nav .full-width {
+  width: 60%;
+  padding-right: 175px;
 }
 
 }
