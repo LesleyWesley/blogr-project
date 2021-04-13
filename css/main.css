@@ -741,6 +741,10 @@ h3 {
       background: linear-gradient(100deg, #FF8F70, #FF3D54);
     }
 
+    .hero-heading {
+      width: 100%;
+    }
+
     .image-overlay {
       background-size: 1600px;
       background-position-y: -650px;
@@ -1192,6 +1196,29 @@ h3 {
   }
 
 }
+
+
+@media only screen and (min-width: 1024px) {
+
+/*========= HEADER - LARGE DESKTOP ============== */
+
+
+  .image-overlay {
+    background-size: 2600px;
+    background-position-y: -1100px;
+    background-position-x: -100px;
+  }
+
+  .desktop-menu {
+    width: 60%;
+    padding: 10px 25px 0 0;
+  }
+
+  .buttons-section {
+    width: 25%;
+  }
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
