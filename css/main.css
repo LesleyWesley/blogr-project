@@ -1198,7 +1198,7 @@ h3 {
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
 
 /*========= HEADER - LARGE DESKTOP ============== */
 
@@ -1217,6 +1217,20 @@ h3 {
   .buttons-section {
     width: 25%;
   }
+
+/*======= ABOUT SECTION - LARGE DESKTOP ========== */
+
+  #about {
+    background-size: 800px;
+    background-position-x: 850px;
+    background-position-y: 75px;
+  }
+
+
+  #about p {
+    font-size: 1em;
+  }
+
 }
 
 
