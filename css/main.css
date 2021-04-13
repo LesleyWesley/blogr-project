@@ -1123,6 +1123,36 @@ h3 {
     font-size: .9em;
   }
 
+/*====== INFRASTRUCTURE SECTION - SMALL DESKTOP ========= */
+
+  .background-top {
+    background-size: 800px;
+    background-position-x: -165px;
+    background-position-y: -425px;
+    height: 350px;
+  }
+
+  .foreground {
+    width: 90%;
+  }
+
+  .text-section {
+    justify-content: flex-start;
+  }
+
+  #middle h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 1.6em;
+    margin-left: 0;
+    margin-top: 140px;
+  }
+
+  #middle p {
+    font-size: .9em;
+    margin-top: 15px;
+  }
+
 
 
 }
