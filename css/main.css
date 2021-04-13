@@ -1073,6 +1073,7 @@ h3 {
 
   header .full-width {
     width: 80%;
+    padding-bottom: 25px;
   }
 
   .left-header {
@@ -1090,6 +1091,36 @@ h3 {
   .buttons-section {
     width: 35%;
     margin-top: 15px;
+  }
+
+/*======== ABOUT SECTION - SMALL DESKTOP =======*/
+
+  #about {
+    background-size: 650px;
+    background-position-x: 550px;
+    background-position-y: 100px;
+  }
+
+  #about .full-width {
+    width: 80%;
+    padding: 100px 0;
+  }
+
+  #about .half-width {
+    width: 50%;
+  }
+
+  #about h2 {
+    margin-top: 0;
+    font-size: 1.75em;
+  }
+
+  #about h3 {
+    margin-top: 40px;
+  }
+
+  #about p {
+    font-size: .9em;
   }
 
 
