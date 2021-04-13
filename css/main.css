@@ -1153,6 +1153,37 @@ h3 {
     margin-top: 15px;
   }
 
+  /*====== FEATURES SECTION - SMALL DESKTOP =====*/
+
+  #features {
+    background-size: 700px;
+    background-position-x: -200px;
+    background-position-y: 100px;
+  }
+
+  #features .full-width {
+    width: 80%;
+    padding: 150px 0;
+  }
+
+  #features .half-width {
+    width: 50%;
+  }
+
+  #features h2 {
+    margin-top: 0;
+    font-size: 1.75em;
+  }
+
+  #features h3 {
+    margin-top: 40px;
+  }
+
+  #features p {
+    font-size: .9em;
+    margin-bottom: 0;
+  }
+
 
 
 }
